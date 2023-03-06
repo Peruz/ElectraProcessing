@@ -1,6 +1,10 @@
 Electra Processing Tool
 ===
 
+<p align="center"><img src="screenshot.png" width="512"></p>
+
+<!-- ![screenshot](screenshot.png){width=50%} -->
+
 Installation
 ---
 The graphical user interface (GUI) uses PySide6, the Python bindings of QT.

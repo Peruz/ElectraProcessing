@@ -7,5 +7,6 @@ electra_processing/tests/processing
 **/*.svg
 **/*.jpg
 **/*.pdf
+**/ElectraProcessing.log
 **/*.spec
 !electra_processing/icon.png
