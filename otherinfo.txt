@@ -1,0 +1,26 @@
+## QSizePolicy
+
+width, height, horizontalpolicy, verticalpolicy
+
+QSizePolicy.Fixed
+The QWidget.sizeHint() is the only acceptable alternative, so the widget can never grow or shrink (e.g. the vertical direction of a push button).
+QSizePolicy.Minimum
+The sizeHint() is minimal, and sufficient.
+The widget can be expanded, but there is no advantage to it being larger (e.g. the horizontal direction of a push button).
+It cannot be smaller than the size provided by sizeHint().
+QSizePolicy.Maximum
+The sizeHint() is a maximum.
+The widget can be shrunk any amount without detriment if other widgets need the space (e.g. a separator line).
+It cannot be larger than the size provided by sizeHint() .
+QSizePolicy.Preferred
+The sizeHint() is best, but the widget can be shrunk and still be useful.
+The widget can be expanded, but there is no advantage to it being larger than sizeHint() (the default PySide.QtGui.QWidget policy).
+QSizePolicy.Expanding
+The sizeHint() is a sensible size, but the widget can be shrunk and still be useful.
+The widget can make use of extra space, so it should get as much space as possible (e.g. the horizontal direction of a horizontal slider).
+QSizePolicy.MinimumExpanding
+The sizeHint() is minimal, and sufficient.
+The widget can make use of extra space, so it should get as much space as possible (e.g. the horizontal direction of a horizontal slider).
+QSizePolicy.Ignored
+The sizeHint() is ignored.
+The widget will get as much space as possible.

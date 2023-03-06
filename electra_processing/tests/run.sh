@@ -1,0 +1,18 @@
+python ../../ertprocess.py \
+-fname grad_rec.ele \
+-rec_check \
+-rec_quantities r \
+-method M_m fft fit \
+-rec_max 8 \
+-rec_couple \
+-ctc_check \
+-ctc_max 10 \
+-err_base_check \
+-err_base_pct 2 \
+-err_rec_check \
+-w_err \
+-plot \
+-export_simpeg \
+-export_pygimli \
+-export_res2dinv \
+-export_csv

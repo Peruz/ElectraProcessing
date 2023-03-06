@@ -1,0 +1,11 @@
+**/target
+**/build
+**/debug
+**/dist
+electra_processing/tests/processing
+**/__pycache__
+**/*.svg
+**/*.jpg
+**/*.pdf
+**/*.spec
+!electra_processing/icon.png
