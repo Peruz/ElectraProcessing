@@ -72,7 +72,7 @@ You are ready to use the app.
 Distribute
 ---
 
-I reccomend using `pyinstaller` to build the app and make it easy to distribute.
+I recommend using `pyinstaller` to build the app and make it easy to distribute.
 Always within the virtual environment run
 ```
 pip install pyinstaller
@@ -85,7 +85,7 @@ This creates a **dist** forlder wherein thereis the built app, for example
 ```
 dist/minimal_ertgui/minimal_ertgui
 ```
-it may have the `.exe` exstension on Windows.
+it may have the `.exe` extension on Windows.
 
 It is possible to distribute the dist folder and run the app by clicking on the built executable.
 Creating a shortcut may be useful.
@@ -99,7 +99,7 @@ At this point, check:
 1. that the desired export options are active (e.g., Res2DInv, CSV, Plot)
 2. that the **base error** is set to a reasonable percentage: 5 if no reciprocal error will be added, 1 or 2 if reciprocal error will be added.
 3. that the reciprocal options are in line with the dataset; disable the reciprocal check if the dataset that not have reciprocal measurements.
-If only part of the dataset contains reciprocal measurements, or another file when rocessing multiple files, enable **unpaired** to keep the measurements without reciprocals.
+If only part of the dataset contains reciprocal measurements, or another file when processing multiple files, enable **unpaired** to keep the measurements without reciprocals.
 4. if the **rhoa** range is ok.
 5. that the control of the contact-resistance is active and with a value suitable for the Electra (10 kohm).
 
