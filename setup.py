@@ -14,6 +14,8 @@ setup(
         'pandas>=1.4.3',
         'numpy',
         'numba',
+        'scipy',
+        'IPython',
         'matplotlib',
         'datetime',
         'argparse',
