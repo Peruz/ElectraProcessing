@@ -19,9 +19,14 @@ Create a directory to contain the python environment and then run
 virtualenv ~/path/to/directory
 ```
 
-Activate the virtual environment with
+Activate the virtual environment.
+On Linux:
 ```
 source ~/path/to/directory/bin/activate
+```
+On Windows:
+```
+C:\Users\user\path\to\directory\Scripts\activate
 ```
 
 There are different ways to check which Python is active.
@@ -35,10 +40,22 @@ import sys
 print(sys.exec_prefix)
 ```
 
-Once the environment is active, some necessary packages should be installed:
+Once the environment is active, there are some options:
+1. automatically install with `pip` from `github`
+Run `pip install git+https://github.com/Peruz/ElectraProcessing`.
+This will automatically install all the dependencies and then the app in the `path\to\directory\Lib\site-package\electra_processing`.
+
+2. clone from the github repository (`git clone https://github.com/Peruz/ElectraProcessing`) and install the app by running `pip install -e .` in the cloned directory.
+`pip` will automatically install the dependencies based on the `setup.py` file, which will be in the cloned folder.
+
+3. clone from the github repository and manually install the dependencies with the following commands:
 ```
-pip install pyside6
+pip install PySide6
 pip install pandas
+pip install numpy
+pip install numba
+pip install scipy
+pip install IPython
 pip install matplotlib
 pip install datetime
 pip install argparse
@@ -46,7 +63,7 @@ pip install argparse
 
 At this point, try running the app with
 ```
-python minimal_ertgui.py
+python ertgui.py
 ```
 Install any missing module with `pip`.
 
