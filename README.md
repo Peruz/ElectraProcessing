@@ -83,11 +83,11 @@ pip install pyinstaller
 ```
 and then
 ```
-pyinstaller minimal_ertgui.py
+pyinstaller ertgui.py
 ```
 This creates a **dist** forlder wherein thereis the built app, for example
 ```
-dist/minimal_ertgui/minimal_ertgui
+dist/ertgui/ertgui
 ```
 it may have the `.exe` extension on Windows.
 
