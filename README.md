@@ -1,4 +1,4 @@
-Electra Processing Tool
+ElectraProcessing
 ===
 
 <p align="center"><img src="screenshot.png" width="512"></p>
