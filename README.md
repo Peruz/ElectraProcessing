@@ -10,7 +10,7 @@ Installation
 The graphical user interface (GUI) uses PySide6, the Python bindings of QT.
 
 To avoid conflicts while installing PySide6 it is better to prepare a separate Python virtual environment.
-If Python is already installed on the computer, use [virtualenv]{https://virtualenv.pypa.io/en/latest/} to create the new environment.
+If Python is already installed on the computer, use [virtualenv](https://virtualenv.pypa.io/en/latest/) to create the new environment.
 The use of the virtual environment avoids creating conflicts with the operative system and other software that rely on the installed Python and its packages.
 If Python is not available on the system, download first a generic Python from the Python official website or Conda.
 
