@@ -8,5 +8,6 @@ Electra_Processing.egg-info/**
 **/*.svg
 **/*.jpg
 **/*.pdf
+**/ElectraProcessing.log
 **/*.spec
 !electra_processing/icon.png

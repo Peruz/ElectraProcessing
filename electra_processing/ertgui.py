@@ -151,10 +151,13 @@ class MainWindow(QMainWindow):
         self.export_csv.setCheckState(Qt.Checked)
         self.export_simpeg = QCheckBox()
         self.export_simpeg.setText('Simpeg')
-        self.export_simpeg.setCheckState(Qt.Checked)
         self.export_res2dinv = QCheckBox()
         self.export_res2dinv.setText('Res2DInv')
+<<<<<<< HEAD
         self.export_simpeg.setCheckState(Qt.Checked)
+=======
+        self.export_res2dinv.setCheckState(Qt.Checked)
+>>>>>>> 5bad73ff5b9d8bba253e9dea96a3a6f7e876c519
         self.export_pygimli = QCheckBox()
         self.export_pygimli.setText('PyGimli')
         self.export_plot = QCheckBox()
