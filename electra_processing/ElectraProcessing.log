@@ -1,0 +1,189 @@
+{'fname': ['C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests/grad_rec.ele', 'C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests/sch.ele', 'C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests/wen.ele'], 'ftype': 'ele', 'outdir': 'processing', 'method': ['fft'], 'rec_check': True, 'rec_max': 5.0, 'rec_r': True, 'rec_rhoa': False, 'rec_couple': True, 'rec_unpaired': True, 'stk_check': False, 'stk_max': 5.0, 'rhoa_check': True, 'rhoa_min': 5.0, 'rhoa_max': 500.0, 'ctc_check': True, 'ctc_max': 10000.0, 'v_check': False, 'v_min': 1.0, 'elecbad_check': False, 'elecbad': [], 'err_base_check': True, 'err_base_pct': 1.0, 'err_rec_check': True, 'shiftelec_check': False, 'shiftelec': 0, 'shiftmeas_check': False, 'shiftmeas': 0, 'export_csv': True, 'export_simpeg': True, 'export_pygimli': False, 'export_res2dinv': False, 'plot': True, 'k_check': False, 'k_max': 10000, 'k_file': None, 'err_stk_check': False, 'rec_quantities': ['r'], 'w_err': True}
+processing
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests/grad_rec.ele
+reading custom ele file, complete format
+checking reciprocal:  r
+C:\Users\User\Desktop\ElectraProcessing\electra_processing\ertprocess.py:318: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  directs['r_directs'] = directs['r']
+C:\Users\User\Desktop\ElectraProcessing\electra_processing\ertprocess.py:319: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  directs['r'] = directs['r_rec_avg']
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\grad_rec_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\grad_rec_r.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\grad_rec_rec_err.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\grad_rec_ctc.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\grad_rec_fft_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\grad_rec_M_m_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\grad_rec_M_m_r_over_fft_r.png
+--- --- ---
+meta
+{'configuration': 'Customized', 'site': 'Customized', 'acquisition': 'nicole grad 50', 'freq': 8.0, 'tgt_current': 50.0, 'sampling': 256, 'curr_dur': 1, 'meas_tot': 890, 'file_name': 'grad_rec.ele', 'file_path': 'C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests', 'file_type': 'ele', 'processing_datetime': '2023-03-09T09:36:23', 'meas_out': 56, 'meas_in': 834, 'by_rec': 56, 'by_rhoa': 0, 'by_k': 0, 'by_ctc': 0, 'by_elecbad': 0}
+elec
+    num     x    y    z
+0     1   0.0  0.0  0.0
+1     2   0.5  0.0  0.0
+2     3   1.0  0.0  0.0
+3     4   1.5  0.0  0.0
+4     5   2.0  0.0  0.0
+5     6   2.5  0.0  0.0
+6     7   3.0  0.0  0.0
+7     8   3.5  0.0  0.0
+8     9   4.0  0.0  0.0
+9    10   4.5  0.0  0.0
+10   11   5.0  0.0  0.0
+11   12   5.5  0.0  0.0
+12   13   6.0  0.0  0.0
+13   14   6.5  0.0  0.0
+14   15   7.0  0.0  0.0
+15   16   7.5  0.0  0.0
+16   17   8.0  0.0  0.0
+17   18   8.5  0.0  0.0
+18   19   9.0  0.0  0.0
+19   20   9.5  0.0  0.0
+20   21  10.0  0.0  0.0
+21   22  10.5  0.0  0.0
+22   23  11.0  0.0  0.0
+23   24  11.5  0.0  0.0
+data
+     meas   a   b   m   n         r         k       rhoa       err  ip           v   curr   ctc  stk datetime  rec_num  rec_fnd  rec_avg   rec_err  rec_valid  k_valid  rhoa_valid  v_valid  ctc_valid  stk_valid  elec_valid  valid Status  GND   V(AB)   M_m_v  a-Spacing  n-Factor  K/(2pi)  M_m_rhoa  M_m_r     fft_r   fft_rhoa  fft_vs_picking_pcterr  r_rec_avg  r_rec_err  r_directs  M_m_r_over_fft_r
+0       1   1   5   2   3  3.448457  4.712389  16.229275  1.260865 NaN  168.512923  48.93  1.69  NaN      NaT       54        1      NaN  0.260865       True     True        True     True       True       True        True   True      E    3   82.58  169.04        0.5      1.00     0.75     16.28   3.45  3.443959  16.229275                    NaN   3.448457   0.260865   3.443959          1.001754
+1       2   1   5   3   4  3.381311  4.712389  15.948117  1.176512 NaN  165.593579  48.93  1.69  NaN      NaT      109        1      NaN  0.176512       True     True        True     True       True       True        True   True      E    3   82.58  166.37        0.5      2.00     0.75     16.02   3.40  3.384296  15.948117                    NaN   3.381311   0.176512   3.384296          1.004640
+2       3   1   7   2   4  3.763006  3.895575  14.761816  2.401778 NaN  185.641757  48.99  2.07  NaN      NaT       55        1      NaN  1.401778       True     True        True     True       True       True        True   True      E    4  101.50  186.80        1.0      0.50     0.62     14.97   3.81  3.789381  14.761816                    NaN   3.763006   1.401778   3.789381          1.005441
+3       4   1   7   3   5  1.798402  6.283185  11.300787  1.019316 NaN   88.112245  48.99  2.07  NaN      NaT      111        1      NaN  0.019316       True     True        True     True       True       True        True   True      E    4  101.50   91.66        1.0      1.00     1.00     11.76   1.87  1.798576  11.300787                    NaN   1.798402   0.019316   1.798576          1.039711
+4       5   1   7   4   6  5.631315  3.895575  21.822791  2.043145 NaN  274.439218  48.99  2.07  NaN      NaT      174        1      NaN  1.043145       True     True        True     True       True       True        True   True      E    4  101.50  273.79        1.0      1.50     0.62     21.95   5.59  5.601944  21.822791                    NaN   5.631315   1.043145   5.601944          0.997868
+5       6   1   9   2   5  3.885956  3.644247  14.304887  3.026642 NaN  192.419856  49.02  2.31  NaN      NaT       56        1      NaN  2.026642       True     True        True     True       True       True        True   True      E    5  113.35  191.03        1.5      0.33     0.58     14.28   3.90  3.925334  14.304887                    NaN   3.885956   2.026642   3.925334          0.993546
+6       7   1   9   3   6  1.456990  6.723008   9.710833  2.725711 NaN   70.805363  49.02  2.31  NaN      NaT      113        1      NaN  1.725711       True     True        True     True       True       True        True   True      E    5  113.35   84.86        1.5      0.67     1.07     11.65   1.73  1.444418   9.710833                    NaN   1.456990   1.725711   1.444418          1.197714
+..    ...  ..  ..  ..  ..       ...       ...        ...       ...  ..         ...    ...   ...  ...      ...      ...      ...      ...       ...        ...      ...         ...      ...        ...        ...         ...    ...    ...  ...     ...     ...        ...       ...      ...       ...    ...       ...        ...                    ...        ...        ...        ...               ...
+866   867  18  24  19  21  3.872056  3.895575  15.035248  1.644885 NaN  189.466347  49.09  1.23  NaN      NaT      874        1      NaN  0.644885       True     True        True     True       True       True        True   True      E   21   60.44  189.36        1.0      0.50     0.62     15.15   3.86  3.859571  15.035248                    NaN   3.872056   0.644885   3.859571          1.000111
+867   868  18  24  20  22  2.264448  6.283185  14.145297  2.161789 NaN  110.516019  49.09  1.23  NaN      NaT      883        1      NaN  1.161789       True     True        True     True       True       True        True   True      E   21   60.44  110.59        1.0      1.00     1.00     14.15   2.25  2.251294  14.145297                    NaN   2.264448   1.161789   2.251294          0.999425
+868   869  18  24  21  23  4.691649  3.895575  18.363695  1.952305 NaN  231.409696  49.09  1.23  NaN      NaT      889        1      NaN  0.952305       True     True        True     True       True       True        True   True      E   21   60.44  232.15        1.0      1.50     0.62     18.57   4.73  4.713989  18.363695                    NaN   4.691649   0.952305   4.713989          1.003397
+876   877  19  23  20  21  4.717751  4.712389  22.184520  1.426038 NaN  231.289372  49.13  1.40  NaN      NaT      881        1      NaN  0.426038       True     True        True     True       True       True        True   True      E   21   68.96  231.49        0.5      1.00     0.75     22.20   4.71  4.707701  22.184520                    NaN   4.717751   0.426038   4.707701          1.000488
+877   878  19  23  21  22  4.034181  4.712389  19.076882  1.696978 NaN  198.890039  49.13  1.40  NaN      NaT      887        1      NaN  0.696978       True     True        True     True       True       True        True   True      E   21   68.96  198.14        0.5      2.00     0.75     19.01   4.03  4.048240  19.076882                    NaN   4.034181   0.696978   4.048240          0.995494
+884   885  20  24  21  22  5.911592  4.712389  27.885608  1.200218 NaN  290.963961  49.17  1.77  NaN      NaT      888        1      NaN  0.200218       True     True        True     True       True       True        True   True      E   22   86.98  290.88        0.5      1.00     0.75     27.88   5.92  5.917510  27.885608                    NaN   5.911592   0.200218   5.917510          1.000421
+885   886  20  24  22  23  4.350228  4.712389  20.728032  3.225036 NaN  216.280391  49.17  1.77  NaN      NaT      890        1      NaN  2.225036       True     True        True     True       True       True        True   True      E   22   86.98  215.77        0.5      2.00     0.75     20.68   4.39  4.398625  20.728032                    NaN   4.350228   2.225036   4.398625          0.998039
+--- --- ---
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests/sch.ele
+reading custom ele file, complete format
+checking reciprocal:  r
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\sch_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\sch_r.png
+C:\Users\User\Desktop\ElectraProcessing\electra_processing\ertutils.py:30: RuntimeWarning: invalid value encountered in scalar divide
+  vstdmedian = vstd / vmedian
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\sch_rec_err.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\sch_ctc.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\sch_fft_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\sch_M_m_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\sch_M_m_r_over_fft_r.png
+--- --- ---
+meta
+{'configuration': 'Schlumberger', 'site': 'Schlumberger', 'acquisition': '1', 'freq': 8.0, 'tgt_current': 10.0, 'sampling': 256, 'curr_dur': 1, 'meas_tot': 358, 'file_name': 'sch.ele', 'file_path': 'C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests', 'file_type': 'ele', 'processing_datetime': '2023-03-09T09:36:25', 'meas_out': 5, 'meas_in': 353, 'by_rec': 0, 'by_rhoa': 5, 'by_k': 0, 'by_ctc': 0, 'by_elecbad': 0}
+elec
+    num     x    y    z
+0     1   0.0  0.0  0.0
+1     2   1.0  0.0  0.0
+2     3   2.0  0.0  0.0
+3     4   3.0  0.0  0.0
+4     5   4.0  0.0  0.0
+5     6   5.0  0.0  0.0
+6     7   6.0  0.0  0.0
+7     8   7.0  0.0  0.0
+8     9   8.0  0.0  0.0
+9    10   9.0  0.0  0.0
+10   11  10.0  0.0  0.0
+11   12  11.0  0.0  0.0
+12   13  12.0  0.0  0.0
+13   14  13.0  0.0  0.0
+14   15  14.0  0.0  0.0
+15   16  15.0  0.0  0.0
+16   17  16.0  0.0  0.0
+17   18  17.0  0.0  0.0
+18   19  18.0  0.0  0.0
+19   20  19.0  0.0  0.0
+20   21  20.0  0.0  0.0
+21   22  21.0  0.0  0.0
+22   23  22.0  0.0  0.0
+23   24  23.0  0.0  0.0
+data
+     meas  a   b   m   n         r          k       rhoa  err  ip          v   curr   ctc  stk datetime  rec_num  rec_fnd  rec_avg  rec_err  rec_valid  k_valid  rhoa_valid  v_valid  ctc_valid  stk_valid  elec_valid  valid Status  GND  V(AB)  M_m_v  a-Spacing  n-Factor  K/(2pi)  M_m_rhoa  M_m_r     fft_r   fft_rhoa  fft_vs_picking_pcterr  r_rec_avg  r_rec_err  r_directs  M_m_r_over_fft_r
+0       1  1   4   2   3  2.023559   6.283185  12.714397  1.0 NaN  21.773497  10.76  0.27  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    3   2.92  21.32        1.0      1.00     1.00     12.45   1.98  2.023559  12.714397                    NaN        0.0        0.0        NaN          0.978474
+1       2  2   5   3   4  2.351786   6.283185  14.776704  1.0 NaN  24.670230  10.49  0.21  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    4   2.23  24.94        1.0      1.00     1.00     14.94   2.38  2.351786  14.776704                    NaN        0.0        0.0        NaN          1.011997
+2       3  3   6   4   5  2.305920   6.283185  14.488524  1.0 NaN  23.820155  10.33  0.26  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    5   2.70  23.35        1.0      1.00     1.00     14.20   2.26  2.305920  14.488524                    NaN        0.0        0.0        NaN          0.980086
+3       4  4   7   5   6  2.695364   6.283185  16.935473  1.0 NaN  27.034504  10.03  0.24  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    6   2.44  26.80        1.0      1.00     1.00     16.79   2.67  2.695364  16.935473                    NaN        0.0        0.0        NaN          0.990590
+4       5  5   8   6   7  2.256709   6.283185  14.179319  1.0 NaN  24.146783  10.70  0.20  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    7   2.13  23.69        1.0      1.00     1.00     13.91   2.21  2.256709  14.179319                    NaN        0.0        0.0        NaN          0.979302
+5       6  6   9   7   8  2.358332   6.283185  14.817840  1.0 NaN  24.078574  10.21  0.23  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    8   2.33  24.69        1.0      1.00     1.00     15.19   2.42  2.358332  14.817840                    NaN        0.0        0.0        NaN          1.026149
+6       7  7  10   8   9  2.364791   6.283185  14.858418  1.0 NaN  24.853951  10.51  0.19  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    9   2.00  24.59        1.0      1.00     1.00     14.69   2.34  2.364791  14.858418                    NaN        0.0        0.0        NaN          0.989517
+..    ... ..  ..  ..  ..       ...        ...        ...  ...  ..        ...    ...   ...  ...      ...      ...      ...      ...      ...        ...      ...         ...      ...        ...        ...         ...    ...    ...  ...    ...    ...        ...       ...      ...       ...    ...       ...        ...                    ...        ...        ...        ...               ...
+351   352  4  24  11  17  0.349106  47.626545  16.626702  1.0 NaN   3.742414  10.72  0.24  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   17   2.58   4.08        6.0      1.17     7.58     18.13   0.38  0.349106  16.626702                    NaN        0.0        0.0        NaN          1.088495
+352   353  1  23   9  15  0.248152  58.622119  14.547176  1.0 NaN   2.712298  10.93  0.29  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   15   3.20   3.44        6.0      1.33     9.33     18.44   0.31  0.248152  14.547176                    NaN        0.0        0.0        NaN          1.249236
+353   354  2  24  10  16  0.266760  58.622119  15.638014  1.0 NaN   2.776968  10.41  0.24  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   16   2.48   3.24        6.0      1.33     9.33     18.23   0.31  0.266760  15.638014                    NaN        0.0        0.0        NaN          1.162095
+354   355  1  22   8  15  0.346023  43.982297  15.218903  1.0 NaN   3.837399  11.09  0.29  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   15   3.25   4.43        7.0      1.00     7.00     17.58   0.40  0.346023  15.218903                    NaN        0.0        0.0        NaN          1.155991
+355   356  2  23   9  16  0.359961  43.982297  15.831933  1.0 NaN   3.790394  10.53  0.24  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   16   2.50   4.20        7.0      1.00     7.00     17.56   0.40  0.359961  15.831933                    NaN        0.0        0.0        NaN          1.111230
+356   357  3  24  10  17  0.382468  43.982297  16.821800  1.0 NaN   3.981487  10.41  0.26  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   17   2.73   4.52        7.0      1.00     7.00     19.10   0.43  0.382468  16.821800                    NaN        0.0        0.0        NaN          1.124278
+357   358  1  24   9  16  0.255754  53.846898  13.771546  1.0 NaN   2.795388  10.93  0.28  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   16   3.09   3.34        7.0      1.14     8.57     16.44   0.31  0.255754  13.771546                    NaN        0.0        0.0        NaN          1.212103
+--- --- ---
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests/wen.ele
+reading custom ele file, complete format
+checking reciprocal:  r
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\wen_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\wen_r.png
+C:\Users\User\Desktop\ElectraProcessing\electra_processing\ertutils.py:30: RuntimeWarning: invalid value encountered in scalar divide
+  vstdmedian = vstd / vmedian
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\wen_rec_err.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\wen_ctc.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\wen_fft_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\wen_M_m_rhoa.png
+C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests\processing\wen_M_m_r_over_fft_r.png
+--- --- ---
+meta
+{'configuration': 'Wenner (alpha)', 'site': 'Wenner (alpha)', 'acquisition': 'wen', 'freq': 8.0, 'tgt_current': 50.0, 'sampling': 256, 'curr_dur': 1, 'meas_tot': 84, 'file_name': 'wen.ele', 'file_path': 'C:/Users/User/Desktop/ElectraProcessing/electra_processing/tests', 'file_type': 'ele', 'processing_datetime': '2023-03-09T09:36:27', 'meas_out': 0, 'meas_in': 84, 'by_rec': 0, 'by_rhoa': 0, 'by_k': 0, 'by_ctc': 0, 'by_elecbad': 0}
+elec
+    num     x    y    z
+0     1   0.0  0.0  0.0
+1     2   2.0  0.0  0.0
+2     3   4.0  0.0  0.0
+3     4   6.0  0.0  0.0
+4     5   8.0  0.0  0.0
+5     6  10.0  0.0  0.0
+6     7  12.0  0.0  0.0
+7     8  14.0  0.0  0.0
+8     9  16.0  0.0  0.0
+9    10  18.0  0.0  0.0
+10   11  20.0  0.0  0.0
+11   12  22.0  0.0  0.0
+12   13  24.0  0.0  0.0
+13   14  26.0  0.0  0.0
+14   15  28.0  0.0  0.0
+15   16  30.0  0.0  0.0
+16   17  32.0  0.0  0.0
+17   18  34.0  0.0  0.0
+18   19  36.0  0.0  0.0
+19   20  38.0  0.0  0.0
+20   21  40.0  0.0  0.0
+21   22  42.0  0.0  0.0
+22   23  44.0  0.0  0.0
+23   24  46.0  0.0  0.0
+data
+    meas  a   b   m   n         r          k        rhoa  err  ip           v   curr   ctc  stk datetime  rec_num  rec_fnd  rec_avg  rec_err  rec_valid  k_valid  rhoa_valid  v_valid  ctc_valid  stk_valid  elec_valid  valid Status  GND   V(AB)   M_m_v  a-Spacing  n-Factor  K/(2pi)  M_m_rhoa  M_m_r     fft_r    fft_rhoa  fft_vs_picking_pcterr  r_rec_avg  r_rec_err  r_directs  M_m_r_over_fft_r
+0      1  1   4   2   3  5.631897  12.566371   70.772500  1.0 NaN  275.962932  49.00  1.63  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    3   79.88  275.71        2.0       1.0      2.0     70.71   5.63  5.631897   70.772500                    NaN        0.0        0.0        NaN          0.999663
+1      2  2   5   3   4  5.462110  12.566371   68.638904  1.0 NaN  267.643413  49.00  1.85  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    4   90.68  267.64        2.0       1.0      2.0     68.64   5.46  5.462110   68.638904                    NaN        0.0        0.0        NaN          0.999614
+2      3  3   6   4   5  6.185861  12.566371   77.733822  1.0 NaN  302.983471  48.98  2.25  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    5  110.20  302.90        2.0       1.0      2.0     77.71   6.18  6.185861   77.733822                    NaN        0.0        0.0        NaN          0.999053
+3      4  4   7   5   6  8.120963  12.566371  102.051030  1.0 NaN  398.414442  49.06  5.01  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    6  245.91  399.31        2.0       1.0      2.0    102.28   8.14  8.120963  102.051030                    NaN        0.0        0.0        NaN          1.002344
+4      5  5   8   6   7  8.648693  12.566371  108.682680  1.0 NaN  424.996766  49.14  2.30  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    7  112.91  422.87        2.0       1.0      2.0    108.15   8.61  8.648693  108.682680                    NaN        0.0        0.0        NaN          0.995526
+5      6  6   9   7   8  8.582377  12.566371  107.849331  1.0 NaN  422.081303  49.18  2.52  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    8  123.89  422.28        2.0       1.0      2.0    107.91   8.59  8.582377  107.849331                    NaN        0.0        0.0        NaN          1.000888
+6      7  7  10   8   9  8.714622  12.566371  109.511168  1.0 NaN  428.062225  49.12  5.05  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E    9  248.00  427.03        2.0       1.0      2.0    109.24   8.69  8.714622  109.511168                    NaN        0.0        0.0        NaN          0.997175
+..   ... ..  ..  ..  ..       ...        ...         ...  ...  ..         ...    ...   ...  ...      ...      ...      ...      ...      ...        ...      ...         ...      ...        ...        ...         ...    ...    ...  ...     ...     ...        ...       ...      ...       ...    ...       ...         ...                    ...        ...        ...        ...               ...
+77    78  3  21   9  15  0.515088  75.398224   38.836726  1.0 NaN   25.265070  49.05  1.88  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   15   92.41   24.37       12.0       1.0     12.0     37.46   0.50  0.515088   38.836726                    NaN        0.0        0.0        NaN          0.970708
+78    79  4  22  10  16  0.465617  75.398224   35.106731  1.0 NaN   22.857162  49.09  1.62  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   16   79.52   22.82       12.0       1.0     12.0     35.06   0.46  0.465617   35.106731                    NaN        0.0        0.0        NaN          0.987935
+79    80  5  23  11  17  0.451947  75.398224   34.076006  1.0 NaN   22.158965  49.03  1.31  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   17   64.23   22.08       12.0       1.0     12.0     33.96   0.45  0.451947   34.076006                    NaN        0.0        0.0        NaN          0.995692
+80    81  6  24  12  18  0.422736  75.398224   31.873542  1.0 NaN   20.760564  49.11  1.57  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   18   77.05   20.90       12.0       1.0     12.0     32.08   0.43  0.422736   31.873542                    NaN        0.0        0.0        NaN          1.017183
+81    82  1  22   8  15  0.428969  87.964594   37.734041  1.0 NaN   21.062354  49.10  1.39  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   15   68.25   20.92       14.0       1.0     14.0     37.48   0.43  0.428969   37.734041                    NaN        0.0        0.0        NaN          1.002405
+82    83  2  23   9  16  0.431531  87.964594   37.959469  1.0 NaN   21.192498  49.11  1.32  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   16   64.75   20.91       14.0       1.0     14.0     37.45   0.43  0.431531   37.959469                    NaN        0.0        0.0        NaN          0.996452
+83    84  3  24  10  17  0.406630  87.964594   35.769053  1.0 NaN   19.969605  49.11  1.76  NaN      NaT        0        0      NaN      0.0       True     True        True     True       True       True        True   True      E   17   86.22   19.93       14.0       1.0     14.0     35.69   0.41  0.406630   35.769053                    NaN        0.0        0.0        NaN          1.008287
+--- --- ---

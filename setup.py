@@ -8,12 +8,13 @@ setup(
     url='https://github.com/Peruz/ElectraProcessing.git',
     packages=['electra_processing'],
     package_dir={'electra_processing': './electra_processing'},
-    package_data={'electra_processing': 'tests/*.ele'}
+    package_data={'electra_processing': ['tests/*.ele']},
     install_requires=[
         'PySide6>=6.3.1',
         'pandas>=1.4.3',
         'numpy',
-        'numba',
+        'IPython',
+        'scipy',
         'matplotlib',
         'datetime',
         'argparse',
