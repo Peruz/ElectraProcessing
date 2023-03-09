@@ -16,7 +16,7 @@ Use the python launcher `py` to manage multiple python versions on Windows.
 Use `pyenv` to manage multiple python versions on Linux.
 
 There are different ways to check which Python is active.
-From the command line (on linux)
+From the command line (on Linux)
 ```
 which python
 ```
@@ -66,7 +66,7 @@ and then
 ```
 pyinstaller ertgui.py
 ```
-This creates a **dist** forlder wherein thereis the built app, for example
+This creates a **dist** folder wherein there is the built app, for example
 ```
 dist/ertgui/ertgui
 ```
