@@ -9,29 +9,11 @@ Installation
 ---
 The graphical user interface (GUI) uses PySide6, the Python bindings of QT.
 
-To avoid conflicts while installing PySide6 it is better to prepare a separate Python virtual environment.
-If Python is already installed on the computer, use [virtualenv](https://virtualenv.pypa.io/en/latest/) to create the new environment.
-The use of the virtual environment avoids creating conflicts with the operative system and other software that rely on the installed Python and its packages.
-If Python is not available on the system, download first a generic Python from the Python official website or Conda.
+### Python version
+Tested versions are 3.9, 3.10, and 3.11.
 
-The app was developed and tested on Python 3.9, but it should work also with successive versions.
-Note that `virtualenv` will create a Python environment based on the version of its Python.
-Therefore, `virtualenv` should be running on Python 3.9 if the virtual environment has be with version 3.9.
-
-Create a directory to contain the python environment and then run
-```
-virtualenv ~/path/to/directory
-```
-
-Activate the virtual environment.
-On Linux:
-```
-source ~/path/to/directory/bin/activate
-```
-On Windows:
-```
-C:\Users\user\path\to\directory\Scripts\activate
-```
+Use the python launcher `py` to manage multiple python versions on Windows.
+Use `pyenv` to manage multiple python versions on Linux.
 
 There are different ways to check which Python is active.
 From the command line (on linux)
@@ -57,9 +39,8 @@ This will automatically install all the dependencies and then the app in the `pa
 pip install PySide6
 pip install pandas
 pip install numpy
-pip install numba
-pip install scipy
 pip install IPython
+pip install scipy
 pip install matplotlib
 pip install datetime
 pip install argparse
