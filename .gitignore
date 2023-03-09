@@ -3,6 +3,7 @@
 **/debug
 **/dist
 electra_processing/tests/processing
+Electra_Processing.egg-info/**
 **/__pycache__
 **/*.svg
 **/*.jpg
